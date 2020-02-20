@@ -1,0 +1,38 @@
+body {
+    background-color: #c6dabf;
+    font-family: cursive;
+    color: #114b5f;
+}
+
+tbody {
+    border-style: solid;
+    border-width: medium;
+    border-color: #114b5f;
+}
+
+td{
+    color: #114b5f;
+    border-width: thick;
+}
+
+.results-border {
+    border-top: solid #f3e9d2;
+}
+
+button {
+    background-color: #1a936f;
+    color: #f3e9d2;
+    padding: 7px 25px 7px 25px;
+    border: thin solid #114b5f;
+    border-radius: 3px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #88d498;
+    color: #114b5f;
+  }
+
+.col-form-label {
+    font-size: 1.5em;
+}
