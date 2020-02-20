@@ -1,10 +1,3 @@
-function clearErrors() {    
-    if (document.forms["lucky7Form"].elements[0].parentElement.className.indexOf("error") != -1) {
-            document.forms["lucky7Form"].elements[0]
-               .parentElement.classList.remove("has-error");
-    }    
-} 
-
 function resetForm() {
     document.forms["lucky7Form"]["startingBet"].value = "";
     document.getElementById("btnPlay").innerText = "Play";
@@ -12,7 +5,6 @@ function resetForm() {
 }
 
 function validateItem() {
-    clearErrors();
     var validBet = Number(document.forms["lucky7Form"]["startingBet"].value);
     if (validBet == "" || isNaN(validBet) || validBet <=0 ) {
         alert("Starting bet must be a positive number.")
@@ -63,5 +55,3 @@ function gameOver(startBet, rolls, maxHeld, rollWhenMax) {
     document.getElementById("maxHeld").innerText = maxHeld.toFixed(2);
     document.getElementById("rollOnHigh").innerText = rollWhenMax;
 }
- 
-
